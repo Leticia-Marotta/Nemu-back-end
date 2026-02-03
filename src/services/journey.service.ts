@@ -32,7 +32,7 @@ export default function journeyService(events: IJourneyDataBase[]) {
       firstTP: firstTP.utm_source,
       lastTP: lastTP.utm_source,
       startedAt: firstTP.createdAt,
-      endedAt: firstTP.createdAt,
+      endedAt: lastTP.createdAt,
     };
   });
 
